@@ -13,11 +13,13 @@ const Table = () => {
     ]);
 
     const [columnDefs] = useState([
+        { headerName: 'Action', field: 'action',cellRendererFramework:()=> <span><a href="">Edit</a> <a className="mr-2" href="">Delete</a></span> },
         { headerName: 'FirstName', field: 'firstName', checkboxSelection: true },
         { headerName: 'LastName', field: 'lastName' },
-        { headerName: 'Age', field: 'age',cellStyle:(params) =>(params.value === 23 ? {background:"green"} : null) },
+        { headerName: 'Age', field: 'age',cellStyle:(params) =>(params.value === 23 ? {border:"2px solid green"} : null) },
         {
             headerName: 'DOB', field: 'age',
+            cellClass: (params) => (params.value === 23 ? "ownClass" : null),
             cellRendererFramework: (params) => <button onClick={()=>clickRenderEvent(params)} className="btn btn-sm w-100 btn-outline-secondary">Click</button>
         }
     ])
@@ -46,6 +48,7 @@ const Table = () => {
                     onGridReady={onGridReady}>
                 </AgGridReact>
             </div>
+            <h2>hi</h2>
         </div>
     );
     // const data = useState([
