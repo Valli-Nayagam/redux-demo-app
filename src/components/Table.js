@@ -5,10 +5,10 @@ import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 const Table = () => {
     const [rowData] = useState([
-        { firstName: 'emp1',lastName: 'LNid0', age: 25 },
-        { firstName: 'emp2',lastName: 'LNid0', age: 25 },
-        { firstName: 'emp3',lastName: 'LNid0', age: 25 },
-        { firstName: 'emp4',lastName: 'LNid0', age: 25 },
+        { firstName: 'emp1',lastName: 'LNid0', age: 21 },
+        { firstName: 'emp2',lastName: 'LNid0', age: 22 },
+        { firstName: 'emp3',lastName: 'LNid0', age: 23 },
+        { firstName: 'emp4',lastName: 'LNid0', age: 24 },
         { firstName: 'emp5',lastName: 'LNid0', age: 25 },
     ]);
 
