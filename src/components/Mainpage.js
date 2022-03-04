@@ -5,7 +5,7 @@ import { addCars, deleteCars } from '../redux'
 function mainpage(props) {
   return (
     <div className="container h-100">
-      <h3>React-Redux</h3>
+      {/* <h3>React-Redux</h3> */}
       <div className="card h-100 m-2">
         <div className="card-header">Car Info</div>
         <div className="card-body h-100 align-items-center">
